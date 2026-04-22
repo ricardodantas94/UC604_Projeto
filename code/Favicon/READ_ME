@@ -1,0 +1,125 @@
+1. Introdução
+
+Este projeto consiste no desenvolvimento de um portefólio pessoal estático, implementado com HTML5 e CSS3. O principal objetivo foi aplicar conhecimentos de desenvolvimento front-end, com foco na criação de uma interface estruturada, responsiva e visualmente consistente.
+
+O portefólio tem como finalidade apresentar informação pessoal, percurso profissional, competências técnicas e projetos desenvolvidos, utilizando uma abordagem moderna de design web.
+
+2. Objetivos
+
+Os objetivos principais deste projeto foram:
+
+Aplicar estruturação semântica em HTML5
+Desenvolver um layout responsivo com CSS3
+Utilizar boas práticas de organização de código
+Criar uma interface com foco em UX/UI
+Implementar um design moderno e consistente
+Integrar navegação fluida por âncoras internas
+3. Tecnologias utilizadas
+HTML5 (estrutura semântica)
+CSS3 (layout, estilização e responsividade)
+Google Fonts (Fraunces e Manrope)
+Conceitos de UI/UX design
+4. Estrutura do projeto
+
+O projeto segue uma arquitetura de página única (single-page layout), organizada em secções distintas:
+
+Menu de navegação
+Secção inicial (Hero)
+Sobre mim
+Competências
+Experiência profissional
+Projetos
+Contactos
+
+A navegação é realizada através de links internos (âncoras), permitindo deslocação fluida entre secções.
+
+5. Implementação técnica
+5.1 Estrutura HTML
+
+O HTML foi desenvolvido com recurso a elementos semânticos como:
+
+<nav> para navegação
+<header> para apresentação inicial
+<main> como contentor principal
+<section> para organização do conteúdo
+
+Esta abordagem melhora a acessibilidade, legibilidade e organização do código.
+
+5.2 Estilização CSS
+
+O CSS foi desenvolvido com uma abordagem modular e reutilizável.
+
+Variáveis CSS
+
+Foi implementado o uso de :root para definir:
+
+cores principais e secundárias
+sombras
+raios de borda
+dimensões globais
+
+Isto permite consistência visual e fácil manutenção.
+
+Layout
+
+Foram utilizados dois sistemas principais:
+
+CSS Grid → estrutura geral das secções
+Flexbox → alinhamento interno de componentes
+Sistema de cartões
+
+Grande parte da interface é baseada em cartões reutilizáveis utilizados em:
+
+competências
+experiência
+projetos
+contactos
+
+Estes incluem:
+
+sombras suaves
+bordas arredondadas
+efeitos de hover
+transparência (glassmorphism leve)
+5.3 Tipografia
+
+Foram utilizadas duas fontes do Google Fonts:
+
+Fraunces → títulos (hierarquia visual forte)
+Manrope → texto corrido (legibilidade)
+5.4 Responsividade
+
+O projeto é totalmente responsivo, utilizando media queries:
+
+Tablet (≤ 960px)
+layout passa para estrutura vertical
+reorganização de grelhas
+adaptação do menu
+Mobile (≤ 720px)
+layout em coluna única
+botões adaptados
+redução de tamanhos e imagens
+5.5 Interações e efeitos visuais
+
+Foram implementadas várias melhorias de UX:
+
+scroll suave (scroll-behavior: smooth)
+transições CSS (transition)
+efeitos hover em botões e cartões
+animação de entrada com @keyframes
+efeitos de profundidade com sombras
+
+
+6. Resultados
+
+O resultado final é uma página web funcional, moderna e responsiva, com uma estrutura clara e bem organizada. O design apresenta boa hierarquia visual e facilita a navegação entre secções.
+
+O projeto demonstra domínio de conceitos fundamentais de front-end, bem como capacidade de organização e aplicação de boas práticas de desenvolvimento.
+
+7. Conclusão
+
+Este projeto permitiu consolidar conhecimentos em HTML5 e CSS3, especialmente na criação de layouts responsivos e interfaces modernas.
+
+A utilização de boas práticas como estrutura semântica, CSS modular e design system baseado em cartões contribuiu para um resultado final consistente e profissional.
+
+Como evolução futura, seria possível expandir o projeto com funcionalidades dinâmicas através de JavaScript ou integração com backend.

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de contacto de Ricardo Dantas">
+    <title>Contacto | Ricardo Dantas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contactos.css">
+    <link rel="icon" href="Favicon/favicon-32x32.png" type="image/png">
+</head>
+<body id="topo">
+    <a href="#topo" class="botao-topo" aria-label="Voltar ao topo">⬆</a>
+
+    <div class="pagina pagina-contacto">
+        <nav class="menu">
+            <a href="principal.html" class="logo">Ricardo Dantas</a>
+
+            <div class="menu-links">
+                <a href="principal.html">Voltar ao portefólio</a>
+            </div>
+        </nav>
+
+        <main>
+            <section class="secao secao-formulario">
+                <div class="cabecalho-secao">
+                    <p class="rotulo">Contacto</p>
+                    <h1>Formulário de contacto</h1>
+                    <p>
+                        Se quiseres entrar em contacto comigo, preenche o formulário abaixo.
+                    </p>
+                </div>
+
+                <form class="formulario-contacto">
+                    <div class="grupo-formulario">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="O teu nome" required>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="teuemail@exemplo.com" required>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="assunto">Assunto</label>
+                        <input type="text" id="assunto" name="assunto" placeholder="Assunto da mensagem" required>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreve aqui a tua mensagem" required></textarea>
+                    </div>
+
+                    <button type="submit" class="botao-principal">Enviar mensagem</button>
+                </form>
+
+                <div class="cartao-telefone">
+                    <div class="icone-telefone">📞</div>
+                    <p class="rotulo">Contacto direto</p>
+                    <h2>(+351) 919 311 316</h2>
+                    <p class="texto-whatsapp">WhatsApp disponível</p>
+                    <p class="nota-telefone">(Custo da chamada para a rede móvel nacional)</p>
+                </div>
+                
+            </section>
+        </main>
+
+         
+
+    </div>
+
+</body>
+</html>

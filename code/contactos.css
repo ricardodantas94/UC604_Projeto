@@ -1,0 +1,324 @@
+/* CORES E TAMANHOS */
+:root {
+    --cor-fundo: #f3ede3;
+    --cor-superficie: rgba(255, 250, 244, 0.8);
+    --cor-texto: #1f2a2c;
+    --cor-texto-suave: #576468;
+    --cor-linha: rgba(31, 42, 44, 0.12);
+    --cor-marca: #9d4d2f;
+    --cor-marca-escura: #73361f;
+    --sombra: 0 18px 40px rgba(54, 38, 24, 0.12);
+    --raio-medio: 20px;
+    --raio-pequeno: 14px;
+}
+
+/* REGRA GERAL */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    color: var(--cor-texto);
+    background:
+        radial-gradient(circle at top left, rgba(216, 176, 123, 0.35), transparent 30%),
+        linear-gradient(180deg, #f7f1e8 0%, var(--cor-fundo) 52%, #efe6d8 100%);
+}
+
+a {
+    color: inherit;
+}
+
+p {
+    margin: 0;
+    line-height: 1.7;
+    color: var(--cor-texto-suave);
+}
+
+h1,
+h2 {
+    margin: 0;
+    font-family: "Fraunces", serif;
+    line-height: 1.08;
+}
+
+h1 {
+    max-width: 11ch;
+    font-size: clamp(2.8rem, 5vw, 5.2rem);
+}
+
+h2 {
+    max-width: 100%;
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+}
+
+/* ESTRUTURA GERAL */
+.pagina {
+    max-width: 760px;
+    margin: 16px auto 40px;
+}
+
+.pagina-contacto {
+    min-height: 100vh;
+}
+
+main {
+    margin-top: 22px;
+}
+
+.secao {
+    padding: 34px;
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 32px;
+    background: rgba(255, 250, 244, 0.72);
+    box-shadow: var(--sombra);
+    animation: aparecer 0.8s ease both;
+}
+
+.secao-formulario {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 18px;
+    padding: 14px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    background-color: rgba(255, 250, 244, 0.95);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    font-family: "Fraunces", serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+}
+
+.menu-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.menu-links a {
+    padding: 10px 14px;
+    border-radius: 999px;
+    text-decoration: none;
+    color: var(--cor-texto-suave);
+    transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+.menu-links a:hover,
+.menu-links a:focus-visible {
+    color: var(--cor-texto);
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: translateY(-1px);
+}
+
+/* TEXTOS */
+.rotulo {
+    margin: 0 0 14px;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--cor-marca);
+}
+
+.cabecalho-secao {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 26px;
+}
+
+.cabecalho-secao p {
+    max-width: 58ch;
+}
+
+/* FORMULÁRIO */
+.formulario-contacto {
+    display: grid;
+    gap: 18px;
+    margin-top: 26px;
+    width: 100%;
+}
+
+.grupo-formulario {
+    display: grid;
+    gap: 8px;
+}
+
+.grupo-formulario label {
+    font-weight: 700;
+    color: var(--cor-texto);
+}
+
+.grupo-formulario input,
+.grupo-formulario textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid var(--cor-linha);
+    border-radius: var(--raio-pequeno);
+    font: inherit;
+    color: var(--cor-texto);
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.grupo-formulario textarea {
+    resize: vertical;
+}
+
+.grupo-formulario input:focus,
+.grupo-formulario textarea:focus {
+    outline: 2px solid rgba(157, 77, 47, 0.2);
+    border-color: var(--cor-marca);
+}
+
+.botao-principal {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 999px;
+    font: inherit;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(135deg, var(--cor-marca), var(--cor-marca-escura));
+    box-shadow: 0 14px 24px rgba(115, 54, 31, 0.22);
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.botao-principal:hover,
+.botao-principal:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 30px rgba(115, 54, 31, 0.28);
+}
+
+/* CARTÃO TELEFONE */
+.cartao-telefone {
+    width: 100%;
+    margin-top: 28px;
+    padding: 28px 24px;
+    border: 1px solid var(--cor-linha);
+    border-radius: var(--raio-medio);
+    background: var(--cor-superficie);
+    box-shadow: 0 10px 24px rgba(31, 42, 44, 0.06);
+    text-align: center;
+}
+
+.icone-telefone {
+    margin-bottom: 12px;
+    font-size: 2rem;
+}
+
+.cartao-telefone h2 {
+    margin-top: 8px;
+}
+
+.texto-whatsapp {
+    margin-top: 10px;
+    color: var(--cor-marca);
+    font-weight: 700;
+}
+
+.nota-telefone {
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
+
+/* Botão Topo */
+
+.botao-topo {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: #000;
+  color: #fff;
+  padding: 0;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 18px;
+  opacity: 0.7;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.botao-topo:hover {
+  opacity: 1;
+  background-color: white;
+  color: #000;
+  }
+  
+/* ANIMAÇÃO */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(22px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* TABLET */
+@media (max-width: 960px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-links {
+        justify-content: flex-start;
+    }
+}
+
+/* TELEMÓVEL */
+@media (max-width: 720px) {
+    .pagina {
+        width: calc(100% - 20px);
+        margin-top: 10px;
+    }
+
+    .secao {
+        padding: 20px;
+        border-radius: 24px;
+    }
+
+    .menu {
+        padding: 12px 14px;
+    }
+
+    h1 {
+        max-width: 100%;
+        font-size: clamp(2.2rem, 12vw, 3.4rem);
+    }
+
+    .cartao-telefone {
+        padding: 22px 18px;
+    }
+}
