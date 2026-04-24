@@ -14,7 +14,7 @@ Este projeto apresenta o meu percurso profissional, competências e alguns traba
 ## Tecnologias
 
 * HTML5
-* CSS3
+* CSS
 
 ## Estrutura
 
@@ -23,11 +23,6 @@ Este projeto apresenta o meu percurso profissional, competências e alguns traba
 * `principal.css` – estilos principais
 * `contactos.css` – estilos da página de contacto
 
-## Como usar
-
-Abrir o ficheiro `index.html` no navegador.
-
-## Contacto
 
 Disponível através da página de contacto incluída no projeto.
 
