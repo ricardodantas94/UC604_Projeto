@@ -147,11 +147,9 @@ main {
     color: var(--cor-texto);
     background-color: #efe6d8;
     transform: translateY(-1px) scale(1.03);
+    transition: 0.25s ease;
 }
 
-.logo:hover {
-    background-color: #efe6d8;
-}
 
 /* Tipografia */
 .rotulo {
