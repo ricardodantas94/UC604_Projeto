@@ -1,6 +1,4 @@
-/* VARIÁVEIS GLOBAIS
- Cores, sombras, raios e largura máxima do layout*/
-
+/* Variáveis globais */
 :root {
     --cor-fundo: #f3ede3;
     --cor-superficie: rgba(255, 250, 244, 0.8);
@@ -17,9 +15,7 @@
     --largura-maxima: 1180px;
 }
 
-/* REGRAS GERAIS
-Reset básico e estilos globais */
-
+/* Estilos base */
 * {
     box-sizing: border-box;
 }
@@ -50,8 +46,7 @@ section {
     scroll-margin-top: 110px;
 }
 
-/* ESTRUTURA GERAL DA PÁGINA */
-
+/* Estrutura geral */
 .pagina {
     width: min(calc(100% - 32px), var(--largura-maxima));
     margin: 16px auto 40px;
@@ -74,7 +69,7 @@ section {
         #fff;
 }
 
-/* Efeito decorativo no canto inferior direito do topo */
+/* Elemento decorativo do topo */
 .topo::after {
     content: "";
     position: absolute;
@@ -98,8 +93,7 @@ main {
     animation: aparecer 0.8s ease both;
 }
 
-/* MENU DE NAVEGAÇÃO*/
-
+/* Menu */
 .menu {
     display: flex;
     align-items: center;
@@ -116,7 +110,6 @@ main {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-/* Nome no menu */
 .logo {
     font-family: "Fraunces", serif;
     font-size: 1.1rem;
@@ -128,7 +121,6 @@ main {
     transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
 }
 
-/* Área dos links do menu */
 .menu-links {
     display: flex;
     flex-wrap: wrap;
@@ -140,7 +132,6 @@ main {
     transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
 }
 
-/* Estilo de cada link do menu */
 .menu-links a {
     padding: 10px 14px;
     border-radius: 999px;
@@ -149,7 +140,7 @@ main {
     transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
 }
 
-/* Efeitos hover/focus no logótipo e links */
+/* Interações do menu */
 .logo:hover,
 .menu-links a:hover,
 .menu-links a:focus-visible {
@@ -162,8 +153,7 @@ main {
     background-color: #efe6d8;
 }
 
-/*TIPOGRAFIA E TEXTOS */
-
+/* Tipografia */
 .rotulo {
     margin: 0 0 14px;
     font-size: 0.78rem;
@@ -201,9 +191,7 @@ p {
     color: var(--cor-texto-suave);
 }
 
-/* SECÇÃO HERO / APRESENTAÇÃO INICIAL*/
-
-
+/* Hero */
 .hero {
     display: grid;
     grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
@@ -211,14 +199,12 @@ p {
     align-items: center;
 }
 
-/* Texto descritivo da área principal */
 .descricao-hero {
     max-width: 60ch;
     margin-top: 20px;
     font-size: 1.05rem;
 }
 
-/* Área dos botões principais */
 .hero-botoes {
     display: flex;
     flex-wrap: wrap;
@@ -226,7 +212,7 @@ p {
     margin-top: 28px;
 }
 
-/* Estilo base dos botões */
+/* Botões */
 .botao,
 .botao-falar {
     display: inline-flex;
@@ -240,32 +226,28 @@ p {
     transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
 }
 
-/* Efeito ao passar o rato / navegar com teclado */
 .botao:hover,
 .botao:focus-visible {
     transform: translateY(-2px) scale(1.03);
 }
 
-/* Botão principal */
 .botao-falar {
     color: #fff;
     background: linear-gradient(135deg, var(--cor-marca), var(--cor-marca-escura));
     box-shadow: 0 14px 24px rgba(115, 54, 31, 0.22);
 }
 
-/* Botão secundário */
 .botao-experiencia {
     border: 1px solid var(--cor-linha);
     background: rgba(255, 255, 255, 0.7);
 }
 
-/* Lado direito da hero */
+/* Imagem principal */
 .hero-lado {
     display: grid;
     gap: 18px;
 }
 
-/* Moldura da imagem principal */
 .foto-principal {
     padding: 14px;
     border-radius: 32px;
@@ -281,8 +263,7 @@ p {
     border-radius: 24px;
 }
 
-/* CARTÕES */
-
+/* Cartões */
 .cartao-info,
 .mini-cartao,
 .cartao-experiencia,
@@ -296,7 +277,6 @@ p {
     box-shadow: 0 10px 24px rgba(31, 42, 44, 0.06);
 }
 
-/* Cartão de informação rápida na hero */
 .cartao-info {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -312,8 +292,7 @@ p {
     color: var(--cor-texto-suave);
 }
 
-/* CABEÇALHOS DAS SECÇÕES*/
-
+/* Cabeçalhos das secções */
 .cabecalho-secao {
     display: grid;
     gap: 10px;
@@ -324,7 +303,6 @@ p {
     max-width: 58ch;
 }
 
-/* Estrutura com texto lateral e conteúdo ao lado */
 .bloco-lateral {
     display: grid;
     grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.2fr);
@@ -338,19 +316,14 @@ p {
     top: 90px;
 }
 
-/* SECÇÃO SOBRE*/
-
+/* Sobre */
 .grelha-sobre {
     display: grid;
     grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
     gap: 20px;
 }
 
-.texto-sobre {
-    display: grid;
-    gap: 16px;
-}
-
+.texto-sobre,
 .grelha-mini-cartoes {
     display: grid;
     gap: 16px;
@@ -369,9 +342,7 @@ p {
     margin-top: 10px;
 }
 
-/* SECÇÃO COMPETÊNCIAS */
-
-
+/* Competências */
 .grelha-competencias {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -379,7 +350,6 @@ p {
     align-content: start;
 }
 
-/* Cartões com logos/competências */
 .cartao-competencia {
     display: flex;
     align-items: center;
@@ -396,7 +366,6 @@ p {
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* Camada decorativa/overlay */
 .cartao-competencia::before {
     content: "";
     position: absolute;
@@ -409,13 +378,7 @@ p {
     box-shadow: 0 16px 28px rgba(31, 42, 44, 0.08);
 }
 
-.cartao-competencia span {
-    position: relative;
-    z-index: 1;
-    font-weight: 700;
-}
-
-/* Imagens de fundo para cada competência */
+/* Imagens das competências */
 .illustrator {
     background-image: url("Imagens/illustrator.png");
 }
@@ -440,8 +403,7 @@ p {
     background-image: url("Imagens/java.png");
 }
 
-/* SECÇÃO EXPERIÊNCIA  */
-
+/* Experiência */
 .grelha-experiencia {
     display: grid;
     gap: 18px;
@@ -457,7 +419,6 @@ p {
     transform: translateY(-4px) scale(1.1);
 }
 
-/* Linha decorativa no topo do cartão */
 .cartao-experiencia::before {
     content: "";
     position: absolute;
@@ -469,7 +430,6 @@ p {
     background: linear-gradient(90deg, var(--cor-marca), var(--cor-destaque));
 }
 
-/* Período temporal da experiência */
 .periodo {
     display: inline-block;
     margin-top: 12px;
@@ -481,7 +441,6 @@ p {
     font-size: 0.82rem;
 }
 
-/* Cargo desempenhado */
 .cargo {
     margin-top: 8px;
     margin-bottom: 10px;
@@ -489,9 +448,7 @@ p {
     font-weight: 700;
 }
 
-
-/* SECÇÃO PROJETOS */
-
+/* Projetos */
 .grelha-projetos {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -507,15 +464,11 @@ p {
     transition: transform 0.28s ease, box-shadow 0.28s ease;
 }
 
-/* Efeito hover nos cartões de projeto */
-
 .cartao-projeto-elegance:hover,
 .cartao-projeto:hover {
     transform: translateY(-6px) scale(1.1);
     box-shadow: 0 20px 36px rgba(31, 42, 44, 0.12);
 }
-
-/* Imagens dos projetos */
 
 .cartao-projeto-elegance img,
 .cartao-projeto img {
@@ -525,23 +478,18 @@ p {
     object-position: 55% center;
 }
 
-/* Texto interno dos projetos */
-
 .texto-projeto {
     display: grid;
     gap: 10px;
     padding: 20px;
 }
 
-/* SECÇÃO CONTACTO */
-
+/* Contacto */
 .grelha-contacto {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px;
 }
-
-/* Cartões clicáveis de contacto */
 
 .cartao-contacto {
     display: grid;
@@ -569,8 +517,7 @@ p {
     transform: translateY(-3px) scale(1.03);
 }
 
-/* BOTÃO FIXO PARA VOLTAR AO TOPO*/
-
+/* Botão voltar ao topo */
 .botao-topo {
     position: fixed;
     bottom: 50px;
@@ -597,8 +544,7 @@ p {
     color: #000;
 }
 
- /* ANIMAÇÃO DE ENTRADA*/
-
+/* Animação */
 @keyframes aparecer {
     from {
         opacity: 0;
@@ -611,8 +557,7 @@ p {
     }
 }
 
-/*  RESPONSIVIDADE - TABLET */
-
+/* Responsividade - tablet */
 @media (max-width: 960px) {
     .hero,
     .grelha-sobre,
@@ -636,8 +581,7 @@ p {
     }
 }
 
-/* RESPONSIVIDADE - TELEMÓVEL*/
-
+/* Responsividade - telemóvel */
 @media (max-width: 720px) {
     .pagina {
         width: min(calc(100% - 20px), var(--largura-maxima));
@@ -652,6 +596,14 @@ p {
 
     .menu {
         padding: 12px 14px;
+    }
+
+    .menu-links {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 8px 10px;
+        font-size: 0.85rem;
     }
 
     h1 {
@@ -680,7 +632,7 @@ p {
         grid-template-columns: 1fr;
     }
 
-    .cartao-projeto
+    .cartao-projeto,
     .cartao-projeto-elegance img {
         height: 200px;
     }
